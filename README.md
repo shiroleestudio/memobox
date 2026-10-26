@@ -117,7 +117,7 @@
 1. **단축어** 앱 → ＋ → 이름 `메모함에 담기`
 2. 아래 ⓘ(설정) → **공유 시트에서 보기** 켜기, 받는 형식: URL·텍스트
 3. 동작 추가: **URL 인코딩** (입력: 단축어 입력)
-4. 동작 추가: **URL 열기** → `https://내아이디.github.io/memobox/?text=` 뒤에 ‘URL 인코딩된 텍스트’ 변수
+4. 동작 추가: **URL 열기** → `https://shiroleestudio.github.io/memobox/?text=` 뒤에 ‘URL 인코딩된 텍스트’ 변수
 
 ### 3. 떠 있는 클립보드처럼 쓰기
 
@@ -148,3 +148,14 @@
 - 테스트: `npm test` (Node 20 이상, 설치할 것 없음)
 - 로컬 실행: `python3 -m http.server` 후 `http://localhost:8000`
 - 앱 파일을 바꾸면 `sw.js`의 `CACHE` 이름(버전)을 올려야 설치된 앱이 새 파일을 받습니다
+
+## 운영
+
+- **주소**: https://shiroleestudio.github.io/memobox/ (저장소 shiroleestudio/memobox). 옛 주소 dooholee96-code.github.io/memobox 는 리다이렉트.
+- **작업 규칙·결정 기록**은 `AGENTS.md`(사람과 AI 공용). `CLAUDE.md` 는 그 파일을 가리키기만 합니다.
+- **배포**: `main` 에 푸시하면 GitHub Pages 가 그대로 올립니다(빌드 없음). 파일을 바꾸면 `sw.js` 의 `CACHE` 버전을 올려야 설치된 앱이 새 파일을 받습니다 — 이걸 빼먹는 것이 가장 흔한 "배포했는데 안 바뀜" 원인입니다.
+- **되돌리기**: `git revert <커밋>` 후 푸시(이때도 `CACHE` 를 한 번 더 올립니다).
+- **의존성 없음.** 설치할 것도, 썩을 것도 없습니다. 테스트만 Node 20 이상(`npm test`).
+- **사용자 데이터**는 기기의 IndexedDB 에만 있습니다. 백업은 ⚙️ → 전체 백업(JSON)으로 사용자가 합니다. 서버·계정 없음.
+- **라이선스**: `LICENSE`(MIT).
+- 계정·정기 점검·다른 저장소: 허브 저장소(shiroleestudio.github.io)의 `STUDIO.md`.
