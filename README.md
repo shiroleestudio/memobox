@@ -117,7 +117,7 @@
 1. **단축어** 앱 → ＋ → 이름 `메모함에 담기`
 2. 아래 ⓘ(설정) → **공유 시트에서 보기** 켜기, 받는 형식: URL·텍스트
 3. 동작 추가: **URL 인코딩** (입력: 단축어 입력)
-4. 동작 추가: **URL 열기** → `https://shiroleestudio.github.io/memobox/?text=` 뒤에 ‘URL 인코딩된 텍스트’ 변수
+4. 동작 추가: **URL 열기** → `https://memobox.shiroleestudio.com/?text=` 뒤에 ‘URL 인코딩된 텍스트’ 변수
 
 ### 3. 떠 있는 클립보드처럼 쓰기
 
@@ -151,7 +151,7 @@
 
 ## 운영
 
-- **주소**: https://shiroleestudio.github.io/memobox/ (저장소 shiroleestudio/memobox). 옛 주소 dooholee96-code.github.io/memobox 는 리다이렉트.
+- **주소**: https://memobox.shiroleestudio.com/ (저장소 shiroleestudio/memobox, 저장소의 `CNAME` 파일이 주소를 정함). 옛 주소 shiroleestudio.github.io/memobox/ 와 dooholee96-code.github.io/memobox 는 리다이렉트. 도메인·DNS 는 허브 저장소의 `STUDIO.md`.
 - **작업 규칙·결정 기록**은 `AGENTS.md`(사람과 AI 공용). `CLAUDE.md` 는 그 파일을 가리키기만 합니다.
 - **배포**: `main` 에 푸시하면 GitHub Pages 가 그대로 올립니다(빌드 없음). 파일을 바꾸면 `sw.js` 의 `CACHE` 버전을 올려야 설치된 앱이 새 파일을 받습니다 — 이걸 빼먹는 것이 가장 흔한 "배포했는데 안 바뀜" 원인입니다.
 - **되돌리기**: `git revert <커밋>` 후 푸시(이때도 `CACHE` 를 한 번 더 올립니다).
